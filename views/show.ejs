@@ -25,28 +25,21 @@
 <br>
 <br>
 <br>
-<br>
-
-<ul>
-    <nav>
-        <button class="button-85" role="button"><a href="/treatments">Back to Treatment Index</a></button>
-    </nav>
-   
-      
-    </ul>
-    <br>
-    <br>
-    <br>
-    <br>
-
     <h1>
-        <%=treatment.title %>
+        <%=treatment.treatment %>
     </h1>
     <h2>
-    Author: <%= treatment.author%>
+    Author: <%= treatment.clinic%>
         <br />
     Completed: <%= treatment.completed %>
     </h2>
+    <ul>
+        <nav>
+            <button class="button-85" role="button"><a href="/treatments">Back to Treatment Index</a></button>
+        </nav>
+       
+          
+        </ul>
 </body>
 
 </html>

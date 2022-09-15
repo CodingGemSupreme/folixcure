@@ -13,7 +13,6 @@ mongoose.connect(process.env.DATABASE_URL, {
 });
 
 // Database Connection Error/Success
-// Define callback functions for various events
 const db = mongoose.connection
 db.on('error', (err) => console.log(err.message + ' is mongo not running?'));
 db.on('connected', () => console.log('MONGO IS CONNECTED TO FOLI X CURE'));
@@ -73,7 +72,6 @@ app.post("/treatments", (req, res) => {
         //if checked, req.body.completed is set to 'on'
         req.body.completed = true;
     } else {
-        //if not checked, req.body.completed is undefined
         req.body.completed = false;
     }
     Treatment.create(req.body, (error, createdTreatment) => {

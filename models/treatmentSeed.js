@@ -1,30 +1,18 @@
-// Seed
 module.exports = [{
-    title: 'Cracking the Coding Interview',
-    author: 'Gayle Laakmann McDowell',
+    treatment: 'Gem Crown Rejuvination',
+    clinic: 'The Hair Chest HRC',
 },
 {
-    title: 'HTML and CSS: Design and Build Websites',
-    author: 'Jon Duckett',
+    treatment: 'Mesotherapy',
+    clinic: 'The Hair Chest',
 },
 {
-    title: 'JavaScript and JQuery: Interactive Front-End Web Development ',
-    author: 'jon Duckett',
+    treatment: 'Ozone Therapy ',
+    clinic: 'The Hair Chest',
 },
 {
-    title: "You Don't Know JS Yet",
-    author: 'Kyle Simpson',
+    treatment: "Oxygen Therapy",
+    clinic: 'The Hair Chest',
 },
-{
-    title: 'Design Patterns: Elements of Reusable Object-Oriented Software ',
-    author: 'Erich Gamma',
-},
-{
-    title: 'Frontend Unicorn',
-    author: 'Michał Malewicz, Szymon Adamiak, Albert Pawłowski, and Albert Walicki',
-},
-{
-    title: "Don't Make Me Think",
-    author: 'Steve Krug',
-},
+
 ];

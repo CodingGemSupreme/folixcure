@@ -29,8 +29,8 @@
     <h1>Edit Treatment</h1>
     <form action="/treatments/<%=treatment._id%>?_method=PUT" method="POST">
         <!--  NOTE: the form is pre-populated with values for the server-->
-        Title: <input type="text" name="title" value="<%=treatment.title%>" /><br />
-        Author: <input type="text" name="author" value="<%=treatment.author%>" /><br />
+        Title: <input type="text" name="treatment" value="<%=treatment.treatment%>" /><br />
+        Author: <input type="text" name="clinic" value="<%=treatment.clinic%>" /><br />
         Completed: <input type="checkbox" name="completed" <% if(treatment.completed===true){ %> checked <% } %> />
             <br />
             <input type="submit" value="Submit Changes" />

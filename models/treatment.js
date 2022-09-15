@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 const treatmentSchema = new mongoose.Schema({
-	title: { type: String, required: true },
-	author: { type: String, required: true },
+	treatment: { type: String, required: true },
+	clinic: { type: String, required: true },
 	
 	completed: Boolean,
 });
