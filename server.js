@@ -7,7 +7,7 @@ const Treatment = require("./models/treatment.js");
 const methodOverride = require("method-override");
 
 // DATABASE CONFIGURATION
-mongoose.connect(process.env.DATABASE_URL, {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -96,7 +96,8 @@ app.get("/treatments/:id", (req, res) => {
 })
 
 // LISTENER
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
+const MONGODB_URI = process.env.MONGODB_URI
 app.listen(PORT, () => {
     console.log(`FOLI X CURE IS LISTENENING: ${PORT}`)
 })

@@ -2,12 +2,18 @@ body {
     background-color: black;
     background-image: url('http://i.imgur.com/e3CC7xp.gif');
     background-size: cover;
-    
-    
-    
     height: 100vh;
     padding:0;
     margin:0;
+}
+.intro {
+padding-top: 275px;
+}
+.headline {
+  padding-top: 50px;
+}
+.new{
+  padding-top: 275px;
 }
 @font-face {
     font-family: HighTide-Regular;
