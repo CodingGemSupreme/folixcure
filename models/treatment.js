@@ -7,6 +7,6 @@ const treatmentSchema = new mongoose.Schema({
 	completed: Boolean,
 });
 
-const Treatment = mongoose.model('Treatment', treatmentSchema);
+const Treatment = mongoose.model('Treatments', treatmentSchema);
 
 module.exports = Treatment;
