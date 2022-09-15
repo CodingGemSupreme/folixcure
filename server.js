@@ -6,8 +6,7 @@ const mongoose = require("mongoose");
 const Treatment = require("./models/treatment.js");
 const methodOverride = require("method-override");
 const db = mongoose.connection
-
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const MONGODB_URI = process.env.MONGODB_URI;
 // DATABASE CONFIGURATION
 mongoose.connect(MONGODB_URI, {
@@ -29,7 +28,7 @@ app.use(express.static('public'));
 // ROUTES
 
 // INDEX
-app.get('/treatments', (req, res) => {
+app.get('/', (req, res) => {
     Treatment.find({}, (error, allTreatments) => {
         res.render('index.ejs', {
             treatments: allTreatments,
