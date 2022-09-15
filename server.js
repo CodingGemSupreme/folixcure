@@ -5,15 +5,18 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const Treatment = require("./models/treatment.js");
 const methodOverride = require("method-override");
+const db = mongoose.connection
 
+const PORT = process.env.PORT || 3000;
+const MONGODB_URI = process.env.MONGODB_URI;
 // DATABASE CONFIGURATION
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
 
 // Database Connection Error/Success
-const db = mongoose.connection
+
 db.on('error', (err) => console.log(err.message + ' is mongo not running?'));
 db.on('connected', () => console.log('MONGO IS CONNECTED TO FOLI X CURE'));
 db.on('disconnected', () => console.log('MONGO HAS DISCONNECTED FROM FOLI X CURE'));
@@ -22,7 +25,7 @@ db.on('disconnected', () => console.log('MONGO HAS DISCONNECTED FROM FOLI X CURE
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.use('/css', express.static('css'));
-
+app.use(express.static('public'));
 // ROUTES
 
 // INDEX
@@ -96,8 +99,8 @@ app.get("/treatments/:id", (req, res) => {
 })
 
 // LISTENER
-const PORT = process.env.PORT || 3000;
-const MONGODB_URI = process.env.MONGODB_URI
+
+
 app.listen(PORT, () => {
     console.log(`FOLI X CURE IS LISTENENING: ${PORT}`)
 })
