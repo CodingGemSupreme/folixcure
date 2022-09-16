@@ -54,7 +54,8 @@ https://trello.com/invite/b/xzOZYV5B/c30e56ba903af50e9dc78f36af3c940c/web-design
 
 ## <a name="deployment"></a>Deployed Link
 Heroku:
-https://www.folixcure.herokuapp.com
+https://folixcure.herokuapp.com/
+##Full Functionality can be obtained via vs code ***
 
 
 * You can view the repository:
