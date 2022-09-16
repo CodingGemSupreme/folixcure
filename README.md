@@ -1,13 +1,13 @@
 # Foli X Cure
 ![folixcurefinal (1)](https://user-images.githubusercontent.com/77770242/190534459-8aaf48b5-130b-410c-af6b-084b3f7d3c61.gif)
-Foli X Cure is a premium treatment listing tool to organize even the most rushed Trichologist. With this tool the user will be able to add their treatment. Once they do that they will be able to see each entry as a list item then edit or delete each item as they see fit. This app utilizes one model and seed while offering full CRUD functionality. I created this app to help trichologist's like myself organize what they prize in a clinic srtting thier protocols/treatments. 
+Foli X Cure is a premium treatment listing tool to help organize even the most rushed Trichologist. With this tool the user will be able to add their treatment. Once they do that they will be able to see each entry as a list item then edit or delete each item as they see fit. This app utilizes one model while offering full CRUD functionality. I created this app to help trichologist's like myself organize what they prize most in a clinic setting their protocols/treatments. 
 ## Table of Contents
 * [Technologies Used](#technologiesused)
 * [Features](#features)
 * [Design](#design)
-* [Project Next Steps]
+* [Project Next Steps](#nextsteps)
 * [Deployed App](#deployment)
-* [About the Author]
+* [About the Author](#author)
 
 ## <a name="technologiesused"></a>Technologies Used
 * JavaScript
